@@ -1,6 +1,5 @@
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import ts from 'rollup-plugin-typescript2';
-import resolve from '@rollup/plugin-node-resolve'; // 你的包用到第三方npm包
 import commonjs from '@rollup/plugin-commonjs'; // 你的包用到的第三方只有commonjs形式的包
 import { terser } from 'rollup-plugin-terser'; // 压缩
 import path from 'path';
@@ -31,7 +30,6 @@ export default {
     ts({
       tsconfig: path.resolve(__dirname, 'tsconfig.json')
     }),
-    resolve(),
     commonjs(),
     terser(),
   ]
