@@ -9,6 +9,10 @@
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lisheri/vite-plugin-vue-uniapp-to-group.git"
+  },
   "dependencies": {
     "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
